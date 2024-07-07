@@ -41,8 +41,11 @@ public class ListingActivity : Activity
             Console.Write("Enter your answer: ");
             string answer = Console.ReadLine();
             answers.Add(answer);
+            _count++; 
         }
+        Console.WriteLine($"This is the total answers that you wrote: {_count}"); 
         return answers;
     }
+        
 
 }
